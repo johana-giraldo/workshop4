@@ -1,0 +1,8 @@
+/node_modules
+/public/audio
+/public/video
+
+.vscode
+.idea
+
+*.log

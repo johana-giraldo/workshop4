@@ -1,0 +1,11 @@
+extends template 
+
+block content
+
+    section(class="row")
+        each item in data
+            article(class="col-xs-12 col-sm-6 col-md-4 card")
+                img(src=item.thumbnailUrl, class=card-img-top, alt="")
+                h2(class="card title") Album: #{item.album}
+                h3 Artist: #{item.artist}
+                a(href='/albums?id=${item.id}', class="btn btn-info") View album info
